@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: Reboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #8a38877a;
+    backdrop-filter: blur(1000px);
+    opacity: 0.9;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+
+}
+article post-header{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 16px;
+    gap: 10px;
+
+
+}
+article header post-location{
+    color: #000000;
+    font-weight: 400;
+}
+
+article header strong{
+    font-size: 24px;
+}
+article header post-info{
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    background-color: #474747;
+    padding: 16px 32px;
+    border-radius: 10px;
+    opacity: 6;
+}
+
+#avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+article post-follow{
+    background-color: #0b1412;
+    color: white;
+    border: 0;
+    padding: 6px 16px;
+    border-radius: 10px;
+    margin-left: 16px;
+}
