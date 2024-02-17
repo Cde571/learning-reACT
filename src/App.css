@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     min-width: 100vw;
     
+    
 
 }
 article .post-header{
@@ -20,12 +21,15 @@ article .post-header{
     font-weight: 700;
     margin-bottom: 16px;
     gap: 10px;
+    justify-content: space-between;
 
 
 }
 article header .post-location{
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 40;
+    margin-bottom: 1px;
+    
 }
 
 article header strong{
@@ -34,6 +38,7 @@ article header strong{
 article header .post-info{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1px;
 }
 
 article{
@@ -43,6 +48,9 @@ article{
     padding: 16px 32px;
     border-radius: 10px;
     opacity: 6;
+    justify-content: space-between;
+    
+
 }
 
 .post-avatar{
@@ -57,5 +65,22 @@ article .post-follow{
     padding: 6px 16px;
     border-radius: 10px;
     margin-left: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.post-follow .is-following{
+    border:1px;
+    background-color: aqua;
+    border: red;
+}
+.post-follow:hover{
+    background-color: #729fff;
+    transition: .1s ease-in background-color;
+}
+.post-follow .is-following{
+    background-color: red;
 }

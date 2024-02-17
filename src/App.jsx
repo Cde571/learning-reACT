@@ -1,22 +1,13 @@
-import './App.css'
+import { AppFollowCard } from './AppFollowCard'
+import './index.css'
 export function App() {
     return (
-       <article className='post'>
-        <header className='post-header'>
-            <img className='post-avatar' alt="microlink.io" src="https://unavatar.io/microlink/microlink.io" />
-                <div className='post-info'>
-                    <strong>
-                        microlink.io
-                    </strong>
-                    <span className='post-location'>
-                        @microlink.io
-                    </span>
-                
-                </div>
-
-            
-        </header>
-        <button className='post-follow'>Follow</button>
-       </article>
+        <section className="App">
+        <AppFollowCard isFollowing={true} username="mark" name="microlink.io" />
+        <AppFollowCard isFollowing={true} username="michaeljacson" name="Michael Jacson" />
+        <AppFollowCard isFollowing={false} username="elonmusk" name="Elon Muak" />
+        <AppFollowCard isFollowing={true} username="cde57" name="Cde57" />
+        <AppFollowCard isFollowing={false} username="esperanzagomez" name="Esperanza Gomez" />
+        </section>
     )
 }
